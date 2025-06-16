@@ -24,6 +24,7 @@ import background from "./background.jpg";
 
 import curve from "./hero/curve.png";
 import robot from "./hero/robot.jpg";
+import img from "./hero/img.jpg"
 import heroBackground from "./hero/hero-background.jpg";
 
 import curve1 from "./collaboration/curve-1.svg";
@@ -53,10 +54,10 @@ import roadmap3 from "./roadmap/image-3.png";
 import roadmap4 from "./roadmap/image-4.png";
 import undone from "./roadmap/undone.svg";
 
-import notification1 from "./notification/image-1.png";
-import notification2 from "./notification/image-2.png";
-import notification3 from "./notification/image-3.png";
-import notification4 from "./notification/image-4.png";
+import notification1 from "./notification/image-1.jpg";
+import notification2 from "./notification/image-2.gif";
+import notification3 from "./notification/image-3.gif";
+import notification4 from "./notification/image-4.gif";
 
 import benefitCard1 from "./benefits/card-1.svg";
 import benefitCard2 from "./benefits/card-2.svg";
@@ -103,6 +104,7 @@ export {
   background,
   curve,
   robot,
+  img,
   heroBackground,
   curve1,
   curve2,

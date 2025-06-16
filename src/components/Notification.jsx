@@ -24,7 +24,7 @@ const Notification = ({ className, title }) => {
             {notificationImages.map((item, index) => (
               <li
                 key={index}
-                className="flex w-6 h-6 border-2 border-n-12 rounded-full overflow-hidden"
+                className="flex w-6 h-6 overflow-hidden"
               >
                 <img
                   src={item}
@@ -36,7 +36,6 @@ const Notification = ({ className, title }) => {
               </li>
             ))}
           </ul>
-          <div className="body-2 text-n-13">1m ago</div>
         </div>
       </div>
     </div>
