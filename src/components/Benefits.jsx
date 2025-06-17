@@ -11,7 +11,7 @@ const Benefits = () => {
       <div className="container relative z-2">
         <Heading
           className="md:max-w-md lg:max-w-2xl"
-          title="Chat Smarter, Not Harder with Brainwave"
+          title="Academic Highlights"
         />
 
         <div className="flex flex-wrap gap-10 mb-10">
@@ -25,18 +25,26 @@ const Benefits = () => {
             >
               <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
                 <h5 className="h5 mb-5">{item.title}</h5>
-                <p className="body-2 mb-6 text-n-3">{item.text}</p>
+                <p className="body-2 mb-6 text-n-3 ">{item.text}</p>
                 <div className="flex items-center mt-auto">
                   <img
                     src={item.iconUrl}
                     width={48}
                     height={48}
                     alt={item.title}
+                    className={`${item.id == 2 ? "hidden" : "rounded-md"}`}
                   />
-                  <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
+                  <a
+                    className={` pointer-events-auto ml-auto font-code cursor-pointer flex items-center text-xs font-bold text-n-1 uppercase tracking-wider ${
+                      item.id == 2 ? "hidden" : ""
+                    }`}
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Explore more
-                  </p>
-                  <Arrow />
+                    <Arrow />
+                  </a>
                 </div>
               </div>
 
