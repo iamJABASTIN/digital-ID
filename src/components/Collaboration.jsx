@@ -1,5 +1,5 @@
-import { brainwaveSymbol, check } from "../assets";
-import { collabApps, collabContent, collabText } from "../constants";
+import { brainwaveSymbol, smallSphere, stars, vscode } from "../assets";
+import { collabApps, collabText } from "../constants";
 import Button from "./Button";
 import Section from "./Section";
 import { LeftCurve, RightCurve } from "./design/Collaboration";
@@ -7,27 +7,42 @@ import { LeftCurve, RightCurve } from "./design/Collaboration";
 const Collaboration = () => {
   return (
     <Section crosses>
+      {/* 👇 New Visual Section with Sphere and Stars */}
+      <div className="hidden relative justify-center mb-[6.5rem] lg:flex">
+        <img
+          src={smallSphere}
+          className="relative z-1"
+          width={255}
+          height={255}
+          alt="Sphere"
+        />
+        <div className="absolute top-1/2 left-1/2 w-[60rem] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+          <img
+            src={stars}
+            className="w-full"
+            width={950}
+            height={400}
+            alt="Stars"
+          />
+        </div>
+      </div>
+
+      {/* 👇 Existing Collaboration Content */}
       <div className="container lg:flex">
         <div className="max-w-[25rem]">
-          <h2 className="h2 mb-4 md:mb-8">
-            AI Chat App for seamless collaboration
-          </h2>
+          <h2 className="h2 mb-4 md:mb-8">About Me</h2>
 
-          <ul className="max-w-[22rem] mb-10 md:mb-14">
-            {collabContent.map((item) => (
-              <li className="mb-3 py-3" key={item.id}>
-                <div className="flex items-center">
-                  <img src={check} width={24} height={24} alt="check" />
-                  <h6 className="body-2 ml-5">{item.title}</h6>
-                </div>
-                {item.text && (
-                  <p className="body-2 mt-3 text-n-4">{item.text}</p>
-                )}
-              </li>
-            ))}
-          </ul>
+          <p className="max-w-[22rem] mb-10 md:mb-14 body-2 text-n-4 text-justify">
+            Passionate Junior Software Developer with a strong foundation in
+            building efficient and scalable applications. Eager to apply my
+            skills in software development, problem-solving, and collaboration
+            to contribute to innovative projects and enhance business
+            efficiency.
+          </p>
 
-          <Button>Try it now</Button>
+          <Button href="https://www.linkedin.com/in/iamjabastin/">
+            Let's Connect
+          </Button>
         </div>
 
         <div className="lg:ml-auto xl:w-[38rem] mt-4">
@@ -40,7 +55,7 @@ const Collaboration = () => {
               <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
                 <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
                   <img
-                    src={brainwaveSymbol}
+                    src={vscode}
                     width={48}
                     height={48}
                     alt="brainwave"

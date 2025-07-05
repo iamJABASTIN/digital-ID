@@ -37,6 +37,15 @@ import photoshop from "./collaboration/photoshop.png";
 import protopie from "./collaboration/protopie.png";
 import raindrop from "./collaboration/raindrop.png";
 import slack from "./collaboration/slack.png";
+import git from "./collaboration/git.png";
+import github from "./collaboration/github.png";
+import java from "./collaboration/java.png";
+import javascript from "./collaboration/javascript.png";
+import mongodb from "./collaboration/mongodb.png";
+import postman from "./collaboration/postman.png";
+import react from "./collaboration/react.png";
+import vscode from "./collaboration/vscode.png";
+import sql from "./collaboration/sql.png";
 
 import service1 from "./services/service-1.png";
 import service2 from "./services/service-2.png";
@@ -118,6 +127,15 @@ export {
   protopie,
   raindrop,
   slack,
+  git,
+  github,
+  mongodb,
+  java,
+  javascript,
+  postman,
+  react,
+  vscode,
+  sql,
   service1,
   service2,
   service3,
