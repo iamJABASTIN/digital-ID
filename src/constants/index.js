@@ -36,6 +36,9 @@ import {
   postman,
   react,
   sql,
+  gmail,
+  linkedin,
+  githubfoot,
 } from "../assets";
 
 export const navigation = [
@@ -96,36 +99,41 @@ export const brainwaveServicesIcons = [
 export const roadmap = [
   {
     id: "0",
-    title: "Voice recognition",
-    text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
-    date: "May 2023",
+    title: "Budget Tracking App",
+    text: "The Budget Tracking System is a user-friendly mobile application designed to help individuals manage their finances efficiently. Developed as a mini-project, this app integrates modern technologies to provide an intuitive and seamless experience for budget tracking, expense management, and financial goal setting.",
+    date: "Nov 2024",
     status: "done",
     imageUrl: roadmap1,
     colorful: true,
+    projectUrl: "https://github.com/iamJABASTIN/Budget-Tracking-System",
   },
   {
     id: "1",
-    title: "Gamification",
-    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
-    date: "May 2023",
-    status: "progress",
+    title: "ZYRA - E-commerce Application",
+    text: "I successfully developed ZYRA, a comprehensive full-stack e-commerce platform tailored specifically for the fashion retail industry. Utilizing the robust MERN stack—consisting of MongoDB, Express.js, React.js, with Tailwind CSS, and Node.js.I crafted an intuitive and dynamic online shopping experience. This platform not only showcases the latest fashion trends but also streamlines the purchasing process, ensuring a seamless interaction for users from browsing to checkout.",
+    date: "Jan 2025",
+    status: "done",
     imageUrl: roadmap2,
+    projectUrl: "https://zyra-client.vercel.app/",
   },
   {
     id: "2",
-    title: "Chatbot customization",
-    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
-    date: "May 2023",
-    status: "done",
+    title: "Academic Hub",
+    text: "We have developed a comprehensive platform designed to consolidate and showcase students' achievements in one accessible location. By leveraging the power of artificial intelligence like ChatGPT, we analyze these accomplishments to offer tailored, personalized suggestions that cater to each student's unique strengths and aspirations. This innovative approach not only highlights individual milestones but also guides students toward future opportunities and growth.",
+    date: "March 2025",
+    status: "progress",
     imageUrl: roadmap3,
+    projectUrl: "https://github.com/iamJABASTIN/level-up",
   },
   {
     id: "3",
-    title: "Integration with APIs",
-    text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
-    date: "May 2023",
-    status: "progress",
+    title: "Mentor Match",
+    text: "I created Mentor Match to help build interesting and meaningful connections between mentors and mentees. My app makes it easy to organize, input, and match details for both students and staff, ensuring everyone finds the right guidance or mentorship. Mentor Match leverages HTML5, CSS3, JavaScript, Electron.js, and Node.js to deliver a user-friendly desktop experience for managing these relationships.",
+    date: "Jan 2024",
+    status: "done",
     imageUrl: roadmap4,
+    colorful: true,
+    projectUrl: "https://github.com/iamJABASTIN/Mentor-Match",
   },
 ];
 
@@ -251,7 +259,7 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
-    link:"https://github.com/iamJABASTIN"
+    link: "https://github.com/iamJABASTIN",
   },
   {
     id: "1",
@@ -261,7 +269,7 @@ export const benefits = [
     iconUrl: benefitIcon2,
     imageUrl: benefitImage3,
     light: true,
-    link:"https://leetcode.com/u/JABASTIN/"
+    link: "https://leetcode.com/u/JABASTIN/",
   },
   {
     id: "2",
@@ -270,38 +278,26 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage4,
-  }
+  },
 ];
 
 export const socials = [
   {
     id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
+    title: "linkedin",
+    iconUrl: linkedin,
+    url: "https://www.linkedin.com/in/iamjabastin/",
   },
   {
     id: "1",
-    title: "Twitter",
-    iconUrl: twitter,
-    url: "#",
+    title: "gmail",
+    iconUrl: gmail,
+    url: "mailto:itsmejabastin@gmail.com",
   },
   {
     id: "2",
-    title: "Instagram",
-    iconUrl: instagram,
-    url: "#",
-  },
-  {
-    id: "3",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
-  },
-  {
-    id: "4",
-    title: "Facebook",
-    iconUrl: facebook,
-    url: "#",
-  },
+    title: "github",
+    iconUrl: githubfoot,
+    url: "https://github.com/iamJABASTIN",
+  }
 ];

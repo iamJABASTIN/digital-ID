@@ -88,6 +88,10 @@ import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
+import githubfoot from "./socials/githubfoot.png";
+import gmail from "./socials/gmail.png";
+import linkedin from "./socials/linkedin.png";
+
 
 export {
   headerimg,
@@ -171,4 +175,7 @@ export {
   instagram,
   telegram,
   twitter,
+  gmail,
+  linkedin,
+  githubfoot,
 };

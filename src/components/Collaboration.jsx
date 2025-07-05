@@ -54,12 +54,7 @@ const Collaboration = () => {
             <div className="flex w-60 aspect-square m-auto border border-n-6 rounded-full">
               <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
                 <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
-                  <img
-                    src={vscode}
-                    width={48}
-                    height={48}
-                    alt="brainwave"
-                  />
+                  <img src={vscode} width={48} height={48} alt="brainwave" />
                 </div>
               </div>
             </div>
