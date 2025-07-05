@@ -6,7 +6,7 @@ import { LeftCurve, RightCurve } from "./design/Collaboration";
 
 const Collaboration = () => {
   return (
-    <Section crosses>
+    <Section crosses id="about">
       {/* 👇 New Visual Section with Sphere and Stars */}
       <div className="hidden relative justify-center mb-[6.5rem] lg:flex">
         <img

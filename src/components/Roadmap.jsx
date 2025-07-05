@@ -50,7 +50,7 @@ const Roadmap = () => (
 
                   <div className="mb-10 -my-10 -mx-15">
                     <img
-                      className="w-full"
+                      className="w-[90%] m-auto p-5"
                       src={item.imageUrl}
                       width={628}
                       height={426}
@@ -58,7 +58,7 @@ const Roadmap = () => (
                     />
                   </div>
                   <h4 className="h4 mb-4">{item.title}</h4>
-                  <p className="body-2 text-n-4 mb-5">{item.text}</p>
+                  <p className="body-2 text-n-4 mb-5 text-justify">{item.text}</p>
                   <Button href={item.projectUrl}>Check it out</Button>
                 </div>
               </div>
