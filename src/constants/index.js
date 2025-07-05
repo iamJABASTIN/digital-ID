@@ -4,6 +4,8 @@ import {
   benefitIcon3,
   benefitIcon4,
   benefitImage2,
+  benefitImage3,
+  benefitImage4,
   chromecast,
   disc02,
   discord,
@@ -257,17 +259,17 @@ export const benefits = [
     text: "Sharpening my logic through daily LeetCode practice. Solving algorithmic challenges helps me write efficient, optimized, and scalable code.",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
+    imageUrl: benefitImage3,
     light: true,
     link:"https://leetcode.com/u/JABASTIN/"
   },
   {
     id: "2",
-    title: "Acedamic",
+    title: "Academic",
     text: "Maintaining strong academic performance with a focus on computer science fundamentals. CGPA reflects consistency, discipline, and a hunger for learning.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
-    imageUrl: benefitImage2,
+    imageUrl: benefitImage4,
   }
 ];
 
