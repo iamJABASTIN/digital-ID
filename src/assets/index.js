@@ -23,9 +23,7 @@ import loading from "./loading.png";
 import background from "./background.jpg";
 
 import curve from "./hero/curve.png";
-import robot from "./hero/robot.jpg";
 import img from "./hero/img.jpg"
-import heroBackground from "./hero/hero-background.jpg";
 
 import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
@@ -56,7 +54,6 @@ import stars from "./pricing/stars.svg";
 
 import coins from "./roadmap/coins.png";
 import done from "./roadmap/done.svg";
-import hero from "./roadmap/hero.png";
 import roadmap1 from "./roadmap/image-1.png";
 import roadmap2 from "./roadmap/image-2.png";
 import roadmap3 from "./roadmap/image-3.png";
@@ -118,9 +115,7 @@ export {
   loading,
   background,
   curve,
-  robot,
   img,
-  heroBackground,
   curve1,
   curve2,
   discord,
@@ -147,7 +142,6 @@ export {
   stars,
   coins,
   done,
-  hero,
   roadmap1,
   roadmap2,
   roadmap3,
