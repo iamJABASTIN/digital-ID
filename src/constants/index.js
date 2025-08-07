@@ -39,6 +39,9 @@ import {
   gmail,
   linkedin,
   githubfoot,
+  benefitCard1,
+  benefitCard2,
+  benefitCard3
 } from "../assets";
 
 export const navigation = [
@@ -239,7 +242,7 @@ export const benefits = [
     id: "0",
     title: "Development",
     text: "Building full-stack projects using modern tech stacks. Check out my GitHub for clean code, real-world apps, and open-source contributions.",
-    backgroundUrl: "./src/assets/benefits/card-1.svg",
+    backgroundUrl: benefitCard1,
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
     link: "https://github.com/iamJABASTIN",
@@ -248,7 +251,7 @@ export const benefits = [
     id: "1",
     title: "Problem Solving",
     text: "Sharpening my logic through daily LeetCode practice. Solving algorithmic challenges helps me write efficient, optimized, and scalable code.",
-    backgroundUrl: "./src/assets/benefits/card-2.svg",
+    backgroundUrl: benefitCard2,
     iconUrl: benefitIcon2,
     imageUrl: benefitImage3,
     light: true,
@@ -258,7 +261,7 @@ export const benefits = [
     id: "2",
     title: "Academic",
     text: "Maintaining strong academic performance with a focus on computer science fundamentals. CGPA reflects consistency, discipline, and a hunger for learning.",
-    backgroundUrl: "./src/assets/benefits/card-3.svg",
+    backgroundUrl: benefitCard3,
     iconUrl: benefitIcon3,
     imageUrl: benefitImage4,
   },

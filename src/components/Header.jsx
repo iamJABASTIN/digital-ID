@@ -1,11 +1,18 @@
+import { useState, lazy, Suspense } from "react";
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import { headerimg } from "../assets";
 import { navigation } from "../constants";
 import Button from "./Button";
-import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
-import { useState } from "react";
+
+// Lazy load the MenuSvg component since it's only used in the mobile menu button
+const MenuSvg = lazy(() => import("../assets/svg/MenuSvg"));
+
+// Create a loading fallback component
+const SvgFallback = () => (
+  <div className="w-6 h-6 bg-n-6 rounded-full animate-pulse"></div>
+);
 
 const Header = () => {
   const pathname = useLocation();
@@ -23,20 +30,27 @@ const Header = () => {
 
   const handleClick = () => {
     if (!openNavigation) return;
-
     enablePageScroll();
     setOpenNavigation(false);
   };
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-50  border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${
+      className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${
         openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
       }`}
     >
       <div className="flex items-center justify-between px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <a className="block w-[12rem] xl:mr-8" href="#hero">
-          <img src={headerimg} width={190} height={30} alt="Brainwave" />
+          {/* Optimize the logo image with lazy loading and modern attributes */}
+          <img
+            src={headerimg}
+            width={190}
+            height={30}
+            alt="Brainwave"
+            loading="eager" // Critical image, load immediately
+            fetchPriority="high" // High priority for loading
+          />
         </a>
 
         <nav
@@ -62,7 +76,6 @@ const Header = () => {
               </a>
             ))}
           </div>
-
           <HamburgerMenu />
         </nav>
 
@@ -71,7 +84,10 @@ const Header = () => {
           px="px-3"
           onClick={toggleNavigation}
         >
-          <MenuSvg openNavigation={openNavigation} />
+          {/* Wrap the lazy-loaded MenuSvg with Suspense */}
+          <Suspense fallback={<SvgFallback />}>
+            <MenuSvg openNavigation={openNavigation} />
+          </Suspense>
         </Button>
       </div>
     </div>
