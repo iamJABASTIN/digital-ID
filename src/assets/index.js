@@ -64,6 +64,7 @@ import notification1 from "./notification/image-1.jpg";
 import notification2 from "./notification/image-2.gif";
 import notification3 from "./notification/image-3.gif";
 import notification4 from "./notification/image-4.gif";
+import notification5 from "./notification/image-5.gif";
 
 import benefitCard1 from "./benefits/card-1.svg";
 import benefitCard2 from "./benefits/card-2.svg";
@@ -151,6 +152,7 @@ export {
   notification2,
   notification3,
   notification4,
+  notification5,
   benefitCard1,
   benefitCard2,
   benefitCard3,
